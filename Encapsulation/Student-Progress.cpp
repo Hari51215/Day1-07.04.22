@@ -29,7 +29,6 @@ class student
 			cout<<"Average mark of the student:"<<average<<endl;
 		}
 };
-
 int main()
 {
 	student s1;
