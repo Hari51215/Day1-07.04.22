@@ -5,27 +5,15 @@ class employee
 {
 	public:
 		int id;
-		string name;
-		
-		void setdata()
-		{
-			cout<<"Enter the Employee ID: ";
-			cin>>id;
-			cout<<"Enter the Employee Name: ";
-			cin>>name;
-		}
-		
-		void display()
-		{
-			cout<<endl<<"Employee Details"<<endl;
-			cout<<"Id :"<<id<<endl;
-			cout<<"Name :"<<name<<endl;
-		}
+		string name; 
 };
 int main()
 {
 	employee e1;
-	e1.setdata();
-	e1.display();
+	cout<<"Enter the Employee ID: ";
+	cin>>e1.id;
+	cout<<"Enter the Employee Name: ";
+	cin>>e1.name;
+	cout<<endl<<e1.id<<endl<<e1.name<<endl;
 	return 0;
 }

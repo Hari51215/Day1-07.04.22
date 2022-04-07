@@ -3,16 +3,14 @@
 using namespace std;
 class employee
 {
+	int id;
+	string name;
+	
 	public:
-		int id;
-		string name;
-		
-		void setdata()
+		void setdata(int i,string n)
 		{
-			cout<<"Enter the Employee ID: ";
-			cin>>id;
-			cout<<"Enter the Employee Name: ";
-			cin>>name;
+			id=i;
+			name=n;
 		}
 		
 		void display()
@@ -25,7 +23,7 @@ class employee
 int main()
 {
 	employee e1;
-	e1.setdata();
+	e1.setdata(100,"Hari");
 	e1.display();
 	return 0;
 }
