@@ -32,14 +32,22 @@ class academics : public student
 
             if(course_name=="Bio-Maths")
             {
-                cout<<"Enter the Biology, Chemistry, Physics Marks:"<<endl;
-                cin>>biology_mark>>chemistry_mark>>physics_mark;
+                cout<<"Enter the Biology Mark : "<<endl;
+                cin>>biology_mark;
+                cout<<"Enter the Chemistry Mark : "<<endl;
+                cin>>chemistry_mark;
+                cout<<"Enter the Physics Mark : "<<endl;
+                cin>>physics_mark;
                 cutoff_mark=biology_mark+((chemistry_mark+physics_mark)/2);
             }
             else if (course_name=="CS-Maths")
             {
-                cout<<"Enter the Computer_Science, Chemistry, Physics Marks:"<<endl;
-                cin>>CS_mark>>chemistry_mark>>physics_mark;
+                cout<<"Enter the Computer Science Mark : "<<endl;
+                cin>>CS_mark;
+                cout<<"Enter the Chemistry Mark : "<<endl;
+                cin>>chemistry_mark;
+                cout<<"Enter the Physics Mark : "<<endl;
+                cin>>physics_mark;
                 cutoff_mark=CS_mark+((chemistry_mark+physics_mark)/2);
             }
             else
@@ -124,11 +132,14 @@ int main()
     string name,c_name,s_name;
     int rollno,no_session;
 
-    cout<<"Enter the Student Name and Roll Number : ";
-    cin>>name>>rollno;
+    cout<<"Enter the Student Name : "<<endl;
+    cin>>name;
+    cout<<"Enter the Student Roll Number : "<<endl;
+    cin>>rollno;
     r1.set_Studentdetails(name,rollno);
 
     cout<<"Choose the Course Name do you want to learn :"<<endl<<"1. Bio-Maths"<<endl<<"2. CS-Maths"<<endl;
+    cout<<"Enter the Course Name Same as Mentioned Above(Case Sensitive)"<<endl;
     cin>>c_name;
     r1.set_Academicsdetails(c_name);
 
